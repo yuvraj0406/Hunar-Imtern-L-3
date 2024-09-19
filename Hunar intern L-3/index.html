@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://images.ctfassets.net/y2ske730sjqp/1aONibCke6niZhgPxuiilC/2c401b05a07288746ddf3bd3943fbc76/BrandAssets_Logos_01-Wordmark.jpg?w=940" alt="Netflix Logo">
+        </div>
+        <nav>
+            <ul>A
+                <li>Home</li>
+                <li>TV Shows</li>
+                <li>Movies</li>
+                <li>New & Popular</li>
+                <li>My List</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="banner-video-container">
+                <img src="https://assets.vogue.in/photos/63aaa0e30b73d722037aebde/3:2/w_1011,h_674,c_limit/Feel-good%20movies.gif" alt="image-banner">
+            </div>
+            <div class="banner-content">
+                <h1>Featured Movie</h1>
+                <button>Play</button>
+                <button>More Info</button>
+            </div>
+        </section>
+
+        <section class="movies">
+            <h2>Trending Now in India</h2>
+            <div class="movie-list" id="movie-list">
+                <!-- Movie items will be injected here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close-button" id="close-button">&times;</span>
+            <h2 id="modal-title">Movie Title</h2>
+            <p id="modal-description">Movie Description</p>
+            <button id="play-button">Play</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
